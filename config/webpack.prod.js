@@ -93,12 +93,12 @@ module.exports = (env) => {
                 template: path.resolve(__dirname, '../public/index.html'),
                 filename: "index.html"
             }),
-            // new BundleAnalyzerPlugin({
-            //     analyzerMode: 'static',
-            //     generateStatsFile: true,
-            //     openAnalyzer: true,
-            //     reportFilename: 'webpack-bundle-report.html'
-            // }),
+            new BundleAnalyzerPlugin({
+                analyzerMode: 'static',
+                generateStatsFile: true,
+                openAnalyzer: true,
+                reportFilename: 'webpack-bundle-report.html'
+            }),
             new Dotenv({ 
                 safe: true, // load '.env.example' to verify the '.env' variables are all set. Can also be a string to a different file.
                 allowEmptyValues: true, // allow empty variables (e.g. `FOO=`) (treat it as empty string, rather than missing)
