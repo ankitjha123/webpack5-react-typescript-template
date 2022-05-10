@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "lib": [
+      "es6",
+      "dom",
+      "es2017"
+    ],
+    "rootDir": "src",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "es6",
+    "target": "es5",
+    "jsx": "react",
+    "allowJs": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "include": [
+    "src/**/*.ts",
+    "declarations.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build"
+  ],
+}
